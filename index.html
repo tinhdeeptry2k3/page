@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroupSoftWare</title>
+    <style>
+        /* Thiết lập các thuộc tính cho thẻ <html> và <body> để đảm bảo kích thước 100% */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Sử dụng flexbox để canh giữa nội dung */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Tùy chỉnh kích thước và căn giữa hình ảnh */
+        .main {
+            text-align: center;
+        }
+
+        img {
+            width: 200px;
+            height: 70px;
+            animation: rotate 3s linear infinite;
+        }
+
+        /* Định nghĩa animation */
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="logo.jpg" alt="">
+    </div>
+</body>
+</html>
