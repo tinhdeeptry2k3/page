@@ -27,16 +27,16 @@
         img {
             width: 200px;
             height: 70px;
-            animation: rotate 3s linear infinite;
+            animation: slide-in 3s linear infinite;
         }
 
         /* Định nghĩa animation */
-        @keyframes rotate {
-            from {
-                transform: rotate(0deg);
+        @keyframes slide-in {
+            0% {
+                transform: translateX(-100%);
             }
-            to {
-                transform: rotate(360deg);
+            100% {
+                transform: translateX(0);
             }
         }
     </style>
